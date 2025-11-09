@@ -56,9 +56,9 @@ https://avionicsduino.com/index.php/en/can-bus
 - kalo diflag sebagai Error Flag maka transmitter harus ngirim ulang   
 
 ## HARDWARE PART
-### CONTROLLERS & TRANCIEVERS
-- controller berupa microcontroller. di controller 32 bit biasanya udah ada module tranciever (ex di umum: TJA1050, MCP2551)   
-- cara kerja: tranciver convert TTL/CMOS signal dari CAN controller ke signal yg membawa informasi lewat kabel CAN_H dan CAL_L (ini membentuk CAN bus)    
+### CONTROLLERS & TRANCEIVERS
+- controller berupa microcontroller. di controller 32 bit biasanya udah ada module tranceiver (ex di umum: TJA1050, MCP2551)   
+- cara kerja: tranceiver convert TTL/CMOS signal dari CAN controller ke signal yg membawa informasi lewat kabel CAN_H dan CAL_L (ini membentuk CAN bus)    
 <img width="1151" height="666" alt="image" src="https://github.com/user-attachments/assets/30f35b56-67aa-498c-bd90-557fbf8e0ee2" />
 
 > Complete diagram of a CAN bus with microcontrollers, CAN controllers, and transceivers.   
