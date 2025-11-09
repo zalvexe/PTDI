@@ -33,7 +33,9 @@ Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-bas
 - **NO DELAY** buat communication yg kayak system warning, flight critical alerts
 - 
 ## VULNERABILITY
-Source: https://www.aerospacemanufacturinganddesign.com/article/countering-can-bus-vulnerability
+Source: 
+a. https://www.aerospacemanufacturinganddesign.com/article/countering-can-bus-vulnerability     
+b. https://www.can-cia.org/fileadmin/cia/documents/publications/cnlm/december_2019/19-4_p22_CAN_security_case_in_smal_aircrafts_holger_zeltwanger_cia.pdf      
 - di aircraft biasanya CAN bus ada di compartment yang accessible buat maintenance
 - data yang biasanya didisplay: ***Altitude, Airspeed, Engine readings, Control/disable autopilot***   
 <img width="326" height="150" alt="image" src="https://github.com/user-attachments/assets/de9039ba-4f3b-4523-bc22-feec2a6f4c26" />
