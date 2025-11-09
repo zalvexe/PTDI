@@ -24,6 +24,14 @@ b. https://experimentalavionics.com/can-bus
 - pake standard length (antara 1-8 bytes)
 - tiap message bisa berisi 1/lebih informasi, ex: engine temp EGT dan CHT cylinder 1 dan 2 akan jadi satu di 8 byte message (2 byte buat tiap temp)
 
+## ARINC-825
+Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-basics
+- Salah satu standar tinggi communication di avionics
+- merupakan adaptasi dari CAN, spesifik buat aviation & aerospace
+- fitur keamanannya bisa menghindari error dari one part of system ke entire network
+- ada error detection **and correction**
+- **NO DELAY** buat communication yg kayak system warning, flight critical alerts
+- 
 ## VULNERABILITY
 Source: https://www.aerospacemanufacturinganddesign.com/article/countering-can-bus-vulnerability
 - di aircraft biasanya CAN bus ada di compartment yang accessible buat maintenance
