@@ -9,11 +9,15 @@ https://avionicsduino.com/index.php/en/can-bus
 -  The physical layer of the CAN protocol consists of the bus itself (two wires transmitting the data) and all the controllers (one per node)   
 ### BUS 
 <img width="1125" height="207" alt="image" src="https://github.com/user-attachments/assets/7a32fac8-ba71-483a-b686-aa1d7725d8b9" />
-- kabel twisted dan ujungnya ada R = 120 ohm    
-- tiap node connect ke twisted wire itu, semakin panjang kabel maka speed bus menurun   
+
+- kabel twisted dan ujungnya ada R = 120 ohm     
+- tiap node connect ke twisted wire itu, semakin panjang kabel maka speed bus menurun
+  
 <img width="1181" height="805" alt="image" src="https://github.com/user-attachments/assets/8f4ce4f0-3862-46d5-acb1-eb0df95066f8" />
+
 - topologi koneksi harus bentuk linear, yg harus dihindari bentuk star   
-- Kalo jarak antara bus ke node lebih dari 30 cm maka pake konfigurasi:  
+- Kalo jarak antara bus ke node lebih dari 30 cm maka pake konfigurasi:
+  
 <img width="1171" height="494" alt="image" src="https://github.com/user-attachments/assets/726544e6-ab99-4ae9-902c-08c15704d4c5" />
 
 > Diverting the bus toward a node rather than overextending a T-connection is better
