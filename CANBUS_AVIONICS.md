@@ -4,7 +4,7 @@
 Source:     
 a. https://www.rapid7.com/research/report/investigating-can-bus-network-integrity-in-avionics-systems   
 b. https://experimentalavionics.com/can-bus    
-- CAN bus jadi pusat control & sensor system di avionics buat collect data kayak ***altitude, airspeed, engine parameter (fuel level, oil pressure)*** terus didisplay ke pilot
+- CAN bus jadi pusat control & sensor system di avionics buat collect data kayak ***altitude, airspeed, engine parameter (fuel level, oil pressure)*** terus didisplay ke pilot    
   <img width="600" height="317" alt="image" src="https://github.com/user-attachments/assets/4aef83a1-46bb-40ca-974d-a1829ef23b00" />
 -  CAN pake differential signaling jadi bisa menghindari EMI
 -  2 kabel: CAN_LOW dan CAN_HIGH. kedua wire nya pakai common voltage 2,5v (represent binary 1). Saat jadi 0, CAN_H jadi 4v dan CAN_L jadi 1v (nilai voltage bisa beda tergantung kondisi, tpi konsepannya sama)
@@ -28,7 +28,7 @@ b. https://experimentalavionics.com/can-bus
 Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-basics
 - Salah satu standar tinggi communication di avionics
 - merupakan adaptasi dari CAN, spesifik buat aviation & aerospace
-- fitur keamanannya bisa menghindari error dari one part of system ke entire network
+- fitur keamanannya bisa menghindari error nyebar dari one part of system ke entire network
 - ada error detection **and correction**
 - **NO DELAY** buat communication yg kayak system warning, flight critical alerts
 - 
