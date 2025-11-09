@@ -69,4 +69,12 @@ https://avionicsduino.com/index.php/en/can-bus
 ## SOFTWARE PART
 - perlu menentukan ID asssignment ke network tergantung prioritasnya
 - ngeprogram microcontroller dari setiap node (cari library yg sesuai)
-- 
+
+## CONTOH KONFIGURASI
+<img width="1844" height="506" alt="image" src="https://github.com/user-attachments/assets/8f9d5aef-6171-42ec-b7d4-11e9075d2e52" />
+
+> Architecture of the CAN and UART communication network. First configuration.
+- contoh data di aircraft CAN Bus
+<img width="1157" height="573" alt="image" src="https://github.com/user-attachments/assets/2db7f49c-de2c-4cc0-9b5e-f458d1edabcc" />
+
+> Pada konfigurasi ini, dengan memperkirakan panjang total pesan sekitar 130 bit (untuk 8 byte data), 115 bit (untuk 6 byte), dan 100 bit (untuk 4 byte), serta mempertimbangkan frekuensi pengiriman datanya, kita dapat menghitung perkiraan beban bus sebesar 13,825 Kbit/s, atau hanya 2,7% dari kapasitas maksimum bandwidth bus. Artinya, sistem ini masih jauh dari risiko kehilangan data (data loss).
