@@ -32,13 +32,16 @@ Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-bas
 - ada error detection **and correction**
 - **NO DELAY** buat communication yg kayak system warning, flight critical alerts
 
+Source: https://cdn.vector.com/cms/content/know-how/_technical-articles/Aerospace_Logging_TestingInternational_201311_PressArticle_EN.pdf
+- di avionik, CAn biasanya dipake di sistem air conditioning, doors, fire detection, cabin management, aircraft galley, and waste water
+- sistem komunikasi distandarkan dengan ARINC. ARINC810 = physical interface, ARINC812 = servive & protocols
 ## ARSITEKTUR
 Source: Gemini
 - Wajib aarsitektur bus ganda (dual bus)
 - tiap unit (LRU) terhubung secara fisik ke bus A dan bus B (keduanya membaca data identik)
 - cold spare: 2 CAN tranciever terhubung di bus yg sama
 - kalo bus A gagal (terputus/dll) maka firmware di unit tsb harus bisa otomatis ngambil data dari bus B tanpa gangguan
-- 
+
 ## VULNERABILITY
 Source: 
 a. https://www.aerospacemanufacturinganddesign.com/article/countering-can-bus-vulnerability     
