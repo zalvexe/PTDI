@@ -34,13 +34,35 @@ Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-bas
 
 Source: https://cdn.vector.com/cms/content/know-how/_technical-articles/Aerospace_Logging_TestingInternational_201311_PressArticle_EN.pdf
 - di avionik, CAn biasanya dipake di sistem air conditioning, doors, fire detection, cabin management, aircraft galley, and waste water
-- sistem komunikasi distandarkan dengan ARINC. ARINC810 = physical interface, ARINC812 = servive & protocols
+- sistem komunikasi  distandarkan dengan ARINC. ARINC810 = physical interface, ARINC812 = servive & protocols
+
+## AIRPLANE COMPONENTS
+Source: https://www.youtube.com/watch?v=H_2omLV7alM
+- ailerons = roll
+- rudder = left right
+- elevators = up and down
+- flaps = dipake waktu takeoff & landing, provide additional lift
+- trim = dipake buat menyamakan kontrol pressure for various flight conditions
+
+## AVIONICS COMPONENTS
+- AHRS = Altitude Heading Reference System
+- magnetometer = compass (detects the direction)
+- engine telemetry = oil pressure, rpm, fuel leve, temp
+- NAV/COM = radio system for voice n navigation
+- transponder = used to tell ground stations where and who i am
+- GPS receiver = where am i
+- electrical controller = can be used to control flaps/trim system
+- autopilot = used to maintain heading, altitude, fly a course, or control ascent/decent at given rate
+- 
 ## ARSITEKTUR
 Source: Gemini
 - Wajib aarsitektur bus ganda (dual bus)
 - tiap unit (LRU) terhubung secara fisik ke bus A dan bus B (keduanya membaca data identik)
 - cold spare: 2 CAN tranciever terhubung di bus yg sama
 - kalo bus A gagal (terputus/dll) maka firmware di unit tsb harus bisa otomatis ngambil data dari bus B tanpa gangguan
+Source: https://www.can-cia.org/fileadmin/cia/documents/proceedings/2012_knueppel.pdf
+- typical CAN installation in aircraft:
+  <img width="1114" height="373" alt="image" src="https://github.com/user-attachments/assets/fdb90af7-105d-4255-82c8-211444d8a189" />
 
 ## VULNERABILITY
 Source: 
