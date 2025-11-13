@@ -34,7 +34,15 @@ Source: https://sitaltech.com/arinc-825-standard-explained-breaking-down-the-bas
 
 Source: https://cdn.vector.com/cms/content/know-how/_technical-articles/Aerospace_Logging_TestingInternational_201311_PressArticle_EN.pdf
 - di avionik, CAn biasanya dipake di sistem air conditioning, doors, fire detection, cabin management, aircraft galley, and waste water
-- sistem komunikasi  distandarkan dengan ARINC. ARINC810 = physical interface, ARINC812 = servive & protocols
+- sistem komunikasi  distandarkan dengan ARINC. ARINC810 = physical interface, ARINC812 = service & protocols
+
+Source = https://www.can-cia.org/fileadmin/cia/documents/proceedings/2012_knueppel.pdf
+- feature ARINC 825:
+  - ngga ada master slave (ya ini fitur CAn in general sih)
+  - identifier assignment ada predefined Logical Communication Channel (LCC), Function identifiers (FID), Data object codes (DOC)
+  - emergency event signaling mechanism = infomasti tentang adanya failure yang terdetect akan dikirimkan dari node yg terkena effeknya
+  - node service mechanism= addressing buat node monitoring, data download, sinkron waktu, lewatoconnection oriented & bisa connectionless service
+  - open to extensions
 
 ## AIRPLANE COMPONENTS
 Source: https://www.youtube.com/watch?v=H_2omLV7alM
