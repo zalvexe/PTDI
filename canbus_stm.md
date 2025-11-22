@@ -26,6 +26,7 @@ setelahnya command itu harusnya LED biru di usb2can nyala
 candump can0
 ```
 - kalo berhasil keterima sama pc bakal muncul id, data data yang dikirim. Bisa diliat jg lewat LED di usbcan yang kedip"
+- kalo mau nyoba priority bisa pakein 2 node STM (ada STM A sama STM B), semakin kecil id maka semakin prioritas tinggi
 
 ## Problem Faced
 - dicoba mode Loopback aman tapi mode Normal ada error 2097152 => turns out itu karena MCP (tranciever) blm dapet 5V
