@@ -19,6 +19,19 @@ b. https://experimentalavionics.com/can-bus
 - Konektor yang umum digunakan untuk membuat kabel CAN adalah **konektor D-Sub 9-pin (female)**
 - Jika konektor solder digunakan untuk instalasi di pesawat, maka harus dipastikan kabel di bagian belakang konektor terpasang dengan kuat, agar tidak terjadi retak (fatigue cracks) pada tepi sambungan solder akibat getaran
 
+## ABOUT DBC
+https://www.we-fuzz.io/blog/dbc---can-database    
+**Signal Decoding Workflow**
+1. Read CAN Frame:Example frame: 0x100 [8] 00 3C 00 01 00 00 00 00   
+2. Locate Message by ID:Match 0x100 to EngineStatus in the DBC file.    
+3. Extract Signal:   
+EngineSpeed starts at bit 0, 16 bits, little-endian.   
+Raw bytes: 00 3C → 0x3C00 → 15360 (raw)    
+4. Apply Scaling:   
+Scale: 0.125   
+5. Physical value: 15360 * 0.125 = 1920 rpm    
+6. Display or Store:    
+Store in log, display on dashboard, or transmit over diagnostics.   
 ### CAN Messages
 - semua message pake standard 11 bit iD
 - pake standard length (antara 1-8 bytes)
